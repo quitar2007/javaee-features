@@ -19,6 +19,7 @@
 *.tar.gz
 *.rar
 
+
 # NetBeans specific
 nbproject/private/
 build/
@@ -37,13 +38,6 @@ target/
 .settings/
 
 # Misc
-*.swp
-release.properties
-pom.xml.releaseBackup
-pom.xml.tag
 .idea/
 *.iml
-*.war
-*.jar
-*.ear
 
