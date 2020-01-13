@@ -8,10 +8,8 @@ import javax.ws.rs.Produces;
 public class WebService {
 
 	@GET
-	// The Java method will produce content identified by the MIME Media type "text/plain"
 	@Produces("text/plain")
 	public String welcome() {
-
 		return "Sper sa mearga";
 	}
 }

@@ -6,6 +6,10 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
+import com.javaee.features.cdi.injection.InjectionDemoWebService;
+import com.javaee.features.cdi.lifecyclecallbacks.LifecycleDemoWebService;
+import com.javaee.features.cdi.scopes.ScopesDemoWebService;
+
 /**
  * This java class declares root resource and provider classes
  */
@@ -17,6 +21,9 @@ public class ApplicationConfig extends Application {
 	public Set<Class<?>> getClasses() {
 		HashSet webResources = new HashSet<Class<?>>();
 		webResources.add( WebService.class );
+		webResources.add(InjectionDemoWebService.class);
+		webResources.add(LifecycleDemoWebService.class);
+		webResources.add(ScopesDemoWebService.class);
 		return webResources;
 	}
 }
