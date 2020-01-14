@@ -8,13 +8,18 @@ import javax.ws.rs.Produces;
 @Path("/qualifier")
 public class QualifierWebService {
 
+	@LatraTare
 	@Inject
-	Caine caine;
+	Caine caine1;
+
+	@LatraIncet
+	@Inject
+	Caine caine2;
 
 	@GET
 	@Produces("text/plain")
 	public String qualifier() {
-		return caine.toString();
+		return caine1.toString() + System.lineSeparator() + caine2.toString();
 	}
 
 }

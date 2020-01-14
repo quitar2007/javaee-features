@@ -2,7 +2,7 @@ package com.javaee.features.cdi.qualifiers;
 
 import javax.enterprise.context.ApplicationScoped;
 
-@MyQualifier
+@LatraIncet
 @ApplicationScoped
 public class Catelush implements Caine {
 }
