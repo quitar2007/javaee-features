@@ -8,7 +8,11 @@ import javax.ws.rs.core.Application;
 
 import com.javaee.features.cdi.injection.InjectionDemoWebService;
 import com.javaee.features.cdi.lifecyclecallbacks.LifecycleDemoWebService;
-import com.javaee.features.cdi.scopes.ScopesDemoWebService;
+import com.javaee.features.cdi.qualifiers.QualifierWebService;
+import com.javaee.features.cdi.scopes.session.SessionWebService;
+import com.javaee.features.cdi.scopes.application.ApplicationWebService;
+import com.javaee.features.cdi.scopes.dependent.DependentWebService;
+import com.javaee.features.cdi.scopes.request.RequestWebService;
 
 /**
  * This java class declares root resource and provider classes
@@ -23,7 +27,14 @@ public class ApplicationConfig extends Application {
 		webResources.add( WebService.class );
 		webResources.add(InjectionDemoWebService.class);
 		webResources.add(LifecycleDemoWebService.class);
-		webResources.add(ScopesDemoWebService.class);
+		// scope demo services
+		webResources.add(ApplicationWebService.class);
+		webResources.add(DependentWebService.class);
+		webResources.add(RequestWebService.class);
+		webResources.add(SessionWebService.class);
+
+		// Qualifier
+		webResources.add(QualifierWebService.class);
 		return webResources;
 	}
 }
