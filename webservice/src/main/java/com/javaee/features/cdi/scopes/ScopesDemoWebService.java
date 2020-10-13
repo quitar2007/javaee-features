@@ -10,6 +10,7 @@ import com.javaee.features.cdi.scopes.dependent.DependentScopeBean;
 import com.javaee.features.cdi.scopes.dependent.RequestScopeBean;
 import com.javaee.features.cdi.scopes.session.SessionScopeBean;
 
+
 @Path("/scope")
 @ApplicationScoped
 public class ScopesDemoWebService {
@@ -18,7 +19,7 @@ public class ScopesDemoWebService {
 	DependentScopeBean dependentScopeBean;
 
 	@Inject
-	com.javaee.features.cdi.scopes.dependent.RequestScopeBean requestWithInnerDependentScopeBean;
+	RequestScopeBean requestWithInnerDependentScopeBean;
 
 	@Inject
 	RequestScopeBean requestScopeBean;

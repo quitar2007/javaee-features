@@ -1,11 +1,10 @@
 package com.javaee.features.cdi.injection;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 
-import com.javaee.features.cdi.editor.GifFileEditor;
 import com.javaee.features.cdi.editor.ImageFileEditor;
+
 
 /**
  * Constructor injection

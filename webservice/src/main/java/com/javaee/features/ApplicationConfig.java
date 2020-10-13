@@ -1,4 +1,4 @@
-package com.javaee.features.rest;
+package com.javaee.features;
 
 import java.util.HashSet;
 import java.util.Set;
